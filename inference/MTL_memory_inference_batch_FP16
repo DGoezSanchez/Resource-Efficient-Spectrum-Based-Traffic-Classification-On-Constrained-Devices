@@ -1,0 +1,434 @@
+
+-----------------------------------------------------------------
+MTL_Torch_model_VGG10MTL_8-11-2023_FP16_batch1.plan
+-----------------------------------------------------------------
+[TensorRT] INFO: [MemUsageChange] Init CUDA: CPU +234, GPU +0, now: CPU 457, GPU 6311 (MiB)
+[TensorRT] INFO: Loaded engine size: 1 MB
+[TensorRT] INFO: [MemUsageSnapshot] deserializeCudaEngine begin: CPU 459 MiB, GPU 6314 MiB
+[TensorRT] VERBOSE: Using cublas a tactic source
+[TensorRT] INFO: [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +167, GPU +170, now: CPU 627, GPU 6485 (MiB)
+[TensorRT] VERBOSE: Using cuDNN as a tactic source
+[TensorRT] INFO: [MemUsageChange] Init cuDNN: CPU +249, GPU +250, now: CPU 876, GPU 6735 (MiB)
+[TensorRT] INFO: [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +0, now: CPU 876, GPU 6735 (MiB)
+[TensorRT] VERBOSE: Deserialization required 1881928 microseconds.
+[TensorRT] INFO: [MemUsageSnapshot] deserializeCudaEngine end: CPU 876 MiB, GPU 6735 MiB
+[TensorRT] INFO: [MemUsageSnapshot] ExecutionContext creation begin: CPU 874 MiB, GPU 6735 MiB
+[TensorRT] VERBOSE: Using cublas a tactic source
+[TensorRT] INFO: [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +0, now: CPU 874, GPU 6735 (MiB)
+[TensorRT] VERBOSE: Using cuDNN as a tactic source
+[TensorRT] INFO: [MemUsageChange] Init cuDNN: CPU +1, GPU +0, now: CPU 875, GPU 6735 (MiB)
+[TensorRT] VERBOSE: Total per-runner device memory is 54272
+[TensorRT] VERBOSE: Total per-runner host memory is 8576
+[TensorRT] VERBOSE: Allocated activation device memory of size 290816
+[TensorRT] INFO: [MemUsageSnapshot] ExecutionContext creation end: CPU 875 MiB, GPU 6735 MiB
+TensorRT Inference Settings:
+  Batch Size           : 1
+  Explicit Batch       : True
+  Input Layer
+    Name               : input_buffer
+    Shape              : (1, 2, 3000)
+    dtype              : float32
+  Output Layer
+    Name               : output_task1
+    Name               : output_task2
+    Name               : output_task3
+    Name               : output_task4
+    Shape              : (1, 3)
+    Shape              : (1, 3)
+    Shape              : (1, 3)
+    Shape              : (1, 7)
+    dtype              : float32
+    dtype              : float32
+    dtype              : float32
+    dtype              : float32
+  Receiver Output Size : 6,000 samples
+  TensorRT Input Size  : 6,000 samples
+  TensorRT Output Size : 3 samples
+  TensorRT Output Size : 3 samples
+  TensorRT Output Size : 3 samples
+  TensorRT Output Size : 7 samples
+Elapsed time (seconds): 11.9016079903 :
+Runtime one sample per seconds (seconds): 0.0014528330 :
+ 
+[TensorRT] INFO: [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +0, now: CPU 879, GPU 6743 (MiB)
+To end!
+
+-----------------------------------------------------------------
+MTL_Torch_model_VGG10MTL_8-11-2023_FP16_batch2.plan
+-----------------------------------------------------------------
+[TensorRT] INFO: [MemUsageChange] Init CUDA: CPU +234, GPU +0, now: CPU 457, GPU 6313 (MiB)
+[TensorRT] INFO: Loaded engine size: 1 MB
+[TensorRT] INFO: [MemUsageSnapshot] deserializeCudaEngine begin: CPU 459 MiB, GPU 6315 MiB
+[TensorRT] VERBOSE: Using cublas a tactic source
+[TensorRT] INFO: [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +167, GPU +169, now: CPU 627, GPU 6485 (MiB)
+[TensorRT] VERBOSE: Using cuDNN as a tactic source
+[TensorRT] INFO: [MemUsageChange] Init cuDNN: CPU +249, GPU +253, now: CPU 876, GPU 6738 (MiB)
+[TensorRT] INFO: [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +0, now: CPU 876, GPU 6738 (MiB)
+[TensorRT] VERBOSE: Deserialization required 1891976 microseconds.
+[TensorRT] INFO: [MemUsageSnapshot] deserializeCudaEngine end: CPU 876 MiB, GPU 6738 MiB
+[TensorRT] INFO: [MemUsageSnapshot] ExecutionContext creation begin: CPU 874 MiB, GPU 6738 MiB
+[TensorRT] VERBOSE: Using cublas a tactic source
+[TensorRT] INFO: [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +1, GPU +0, now: CPU 875, GPU 6738 (MiB)
+[TensorRT] VERBOSE: Using cuDNN as a tactic source
+[TensorRT] INFO: [MemUsageChange] Init cuDNN: CPU +0, GPU +0, now: CPU 875, GPU 6738 (MiB)
+[TensorRT] VERBOSE: Total per-runner device memory is 54272
+[TensorRT] VERBOSE: Total per-runner host memory is 8064
+[TensorRT] VERBOSE: Allocated activation device memory of size 578048
+[TensorRT] INFO: [MemUsageSnapshot] ExecutionContext creation end: CPU 875 MiB, GPU 6738 MiB
+TensorRT Inference Settings:
+  Batch Size           : 2
+  Explicit Batch       : False
+  Input Layer
+    Name               : input_buffer
+    Shape              : (2, 2, 3000)
+    dtype              : float32
+  Output Layer
+    Name               : output_task1
+    Name               : output_task2
+    Name               : output_task3
+    Name               : output_task4
+    Shape              : (2, 3)
+    Shape              : (2, 3)
+    Shape              : (2, 3)
+    Shape              : (2, 7)
+    dtype              : float32
+    dtype              : float32
+    dtype              : float32
+    dtype              : float32
+  Receiver Output Size : 12,000 samples
+  TensorRT Input Size  : 12,000 samples
+  TensorRT Output Size : 6 samples
+  TensorRT Output Size : 6 samples
+  TensorRT Output Size : 6 samples
+  TensorRT Output Size : 14 samples
+Elapsed time (seconds): 6.5436377525 :
+Runtime one sample per seconds (seconds): 0.0007987839 :
+ 
+[TensorRT] INFO: [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +0, now: CPU 876, GPU 6741 (MiB)
+To end!
+
+-----------------------------------------------------------------
+MTL_Torch_model_VGG10MTL_8-11-2023_FP16_batch4.plan
+-----------------------------------------------------------------
+[TensorRT] INFO: [MemUsageChange] Init CUDA: CPU +234, GPU +0, now: CPU 457, GPU 6315 (MiB)
+[TensorRT] INFO: Loaded engine size: 1 MB
+[TensorRT] INFO: [MemUsageSnapshot] deserializeCudaEngine begin: CPU 459 MiB, GPU 6319 MiB
+[TensorRT] VERBOSE: Using cublas a tactic source
+[TensorRT] INFO: [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +167, GPU +173, now: CPU 627, GPU 6492 (MiB)
+[TensorRT] VERBOSE: Using cuDNN as a tactic source
+[TensorRT] INFO: [MemUsageChange] Init cuDNN: CPU +249, GPU +252, now: CPU 876, GPU 6744 (MiB)
+[TensorRT] INFO: [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +0, now: CPU 876, GPU 6744 (MiB)
+[TensorRT] VERBOSE: Deserialization required 1903080 microseconds.
+[TensorRT] INFO: [MemUsageSnapshot] deserializeCudaEngine end: CPU 876 MiB, GPU 6744 MiB
+[TensorRT] INFO: [MemUsageSnapshot] ExecutionContext creation begin: CPU 874 MiB, GPU 6744 MiB
+[TensorRT] VERBOSE: Using cublas a tactic source
+[TensorRT] INFO: [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +1, GPU +0, now: CPU 875, GPU 6744 (MiB)
+[TensorRT] VERBOSE: Using cuDNN as a tactic source
+[TensorRT] INFO: [MemUsageChange] Init cuDNN: CPU +0, GPU +0, now: CPU 875, GPU 6744 (MiB)
+[TensorRT] VERBOSE: Total per-runner device memory is 54272
+[TensorRT] VERBOSE: Total per-runner host memory is 9600
+[TensorRT] VERBOSE: Allocated activation device memory of size 1154560
+[TensorRT] INFO: [MemUsageSnapshot] ExecutionContext creation end: CPU 875 MiB, GPU 6744 MiB
+TensorRT Inference Settings:
+  Batch Size           : 4
+  Explicit Batch       : False
+  Input Layer
+    Name               : input_buffer
+    Shape              : (4, 2, 3000)
+    dtype              : float32
+  Output Layer
+    Name               : output_task1
+    Name               : output_task2
+    Name               : output_task3
+    Name               : output_task4
+    Shape              : (4, 3)
+    Shape              : (4, 3)
+    Shape              : (4, 3)
+    Shape              : (4, 7)
+    dtype              : float32
+    dtype              : float32
+    dtype              : float32
+    dtype              : float32
+  Receiver Output Size : 24,000 samples
+  TensorRT Input Size  : 24,000 samples
+  TensorRT Output Size : 12 samples
+  TensorRT Output Size : 12 samples
+  TensorRT Output Size : 12 samples
+  TensorRT Output Size : 28 samples
+Elapsed time (seconds): 3.4990243912 :
+Runtime one sample per seconds (seconds): 0.0004271270 :
+ 
+[TensorRT] INFO: [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +0, now: CPU 876, GPU 6746 (MiB)
+To end!
+
+-----------------------------------------------------------------
+MTL_Torch_model_VGG10MTL_8-11-2023_FP16_batch8.plan
+-----------------------------------------------------------------
+[TensorRT] INFO: [MemUsageChange] Init CUDA: CPU +234, GPU +0, now: CPU 457, GPU 6321 (MiB)
+[TensorRT] INFO: Loaded engine size: 1 MB
+[TensorRT] INFO: [MemUsageSnapshot] deserializeCudaEngine begin: CPU 459 MiB, GPU 6323 MiB
+[TensorRT] VERBOSE: Using cublas a tactic source
+[TensorRT] INFO: [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +167, GPU +167, now: CPU 627, GPU 6490 (MiB)
+[TensorRT] VERBOSE: Using cuDNN as a tactic source
+[TensorRT] INFO: [MemUsageChange] Init cuDNN: CPU +249, GPU +250, now: CPU 876, GPU 6740 (MiB)
+[TensorRT] INFO: [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +0, now: CPU 876, GPU 6740 (MiB)
+[TensorRT] VERBOSE: Deserialization required 1905658 microseconds.
+[TensorRT] INFO: [MemUsageSnapshot] deserializeCudaEngine end: CPU 876 MiB, GPU 6740 MiB
+[TensorRT] INFO: [MemUsageSnapshot] ExecutionContext creation begin: CPU 874 MiB, GPU 6740 MiB
+[TensorRT] VERBOSE: Using cublas a tactic source
+[TensorRT] INFO: [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +1, GPU +0, now: CPU 875, GPU 6740 (MiB)
+[TensorRT] VERBOSE: Using cuDNN as a tactic source
+[TensorRT] INFO: [MemUsageChange] Init cuDNN: CPU +0, GPU +0, now: CPU 875, GPU 6740 (MiB)
+[TensorRT] VERBOSE: Total per-runner device memory is 54272
+[TensorRT] VERBOSE: Total per-runner host memory is 9600
+[TensorRT] VERBOSE: Allocated activation device memory of size 2306560
+[TensorRT] INFO: [MemUsageSnapshot] ExecutionContext creation end: CPU 875 MiB, GPU 6740 MiB
+TensorRT Inference Settings:
+  Batch Size           : 8
+  Explicit Batch       : False
+  Input Layer
+    Name               : input_buffer
+    Shape              : (8, 2, 3000)
+    dtype              : float32
+  Output Layer
+    Name               : output_task1
+    Name               : output_task2
+    Name               : output_task3
+    Name               : output_task4
+    Shape              : (8, 3)
+    Shape              : (8, 3)
+    Shape              : (8, 3)
+    Shape              : (8, 7)
+    dtype              : float32
+    dtype              : float32
+    dtype              : float32
+    dtype              : float32
+  Receiver Output Size : 48,000 samples
+  TensorRT Input Size  : 48,000 samples
+  TensorRT Output Size : 24 samples
+  TensorRT Output Size : 24 samples
+  TensorRT Output Size : 24 samples
+  TensorRT Output Size : 56 samples
+Elapsed time (seconds): 1.8393976688 :
+Runtime one sample per seconds (seconds): 0.0002245358 :
+ 
+[TensorRT] INFO: [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +0, now: CPU 876, GPU 6742 (MiB)
+To end!
+
+-----------------------------------------------------------------
+MTL_Torch_model_VGG10MTL_8-11-2023_FP16_batch16.plan
+-----------------------------------------------------------------
+[TensorRT] INFO: [MemUsageChange] Init CUDA: CPU +234, GPU +0, now: CPU 457, GPU 6319 (MiB)
+[TensorRT] INFO: Loaded engine size: 1 MB
+[TensorRT] INFO: [MemUsageSnapshot] deserializeCudaEngine begin: CPU 459 MiB, GPU 6323 MiB
+[TensorRT] VERBOSE: Using cublas a tactic source
+[TensorRT] INFO: [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +167, GPU +173, now: CPU 627, GPU 6496 (MiB)
+[TensorRT] VERBOSE: Using cuDNN as a tactic source
+[TensorRT] INFO: [MemUsageChange] Init cuDNN: CPU +249, GPU +246, now: CPU 876, GPU 6742 (MiB)
+[TensorRT] INFO: [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +0, now: CPU 876, GPU 6742 (MiB)
+[TensorRT] VERBOSE: Deserialization required 1933951 microseconds.
+[TensorRT] INFO: [MemUsageSnapshot] deserializeCudaEngine end: CPU 876 MiB, GPU 6742 MiB
+[TensorRT] INFO: [MemUsageSnapshot] ExecutionContext creation begin: CPU 874 MiB, GPU 6742 MiB
+[TensorRT] VERBOSE: Using cublas a tactic source
+[TensorRT] INFO: [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +1, GPU +0, now: CPU 875, GPU 6742 (MiB)
+[TensorRT] VERBOSE: Using cuDNN as a tactic source
+[TensorRT] INFO: [MemUsageChange] Init cuDNN: CPU +0, GPU +0, now: CPU 875, GPU 6742 (MiB)
+[TensorRT] VERBOSE: Total per-runner device memory is 54272
+[TensorRT] VERBOSE: Total per-runner host memory is 8064
+[TensorRT] VERBOSE: Allocated activation device memory of size 4612096
+[TensorRT] INFO: [MemUsageSnapshot] ExecutionContext creation end: CPU 875 MiB, GPU 6742 MiB
+TensorRT Inference Settings:
+  Batch Size           : 16
+  Explicit Batch       : False
+  Input Layer
+    Name               : input_buffer
+    Shape              : (16, 2, 3000)
+    dtype              : float32
+  Output Layer
+    Name               : output_task1
+    Name               : output_task2
+    Name               : output_task3
+    Name               : output_task4
+    Shape              : (16, 3)
+    Shape              : (16, 3)
+    Shape              : (16, 3)
+    Shape              : (16, 7)
+    dtype              : float32
+    dtype              : float32
+    dtype              : float32
+    dtype              : float32
+  Receiver Output Size : 96,000 samples
+  TensorRT Input Size  : 96,000 samples
+  TensorRT Output Size : 48 samples
+  TensorRT Output Size : 48 samples
+  TensorRT Output Size : 48 samples
+  TensorRT Output Size : 112 samples
+Elapsed time (seconds): 1.2982532978 :
+Runtime one sample per seconds (seconds): 0.0001584782 :
+ 
+[TensorRT] INFO: [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +0, now: CPU 876, GPU 6744 (MiB)
+To end!
+
+-----------------------------------------------------------------
+MTL_Torch_model_VGG10MTL_8-11-2023_FP16_batch32.plan
+-----------------------------------------------------------------
+[TensorRT] INFO: [MemUsageChange] Init CUDA: CPU +234, GPU +0, now: CPU 457, GPU 6321 (MiB)
+[TensorRT] INFO: Loaded engine size: 1 MB
+[TensorRT] INFO: [MemUsageSnapshot] deserializeCudaEngine begin: CPU 459 MiB, GPU 6324 MiB
+[TensorRT] VERBOSE: Using cublas a tactic source
+[TensorRT] INFO: [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +167, GPU +172, now: CPU 627, GPU 6497 (MiB)
+[TensorRT] VERBOSE: Using cuDNN as a tactic source
+[TensorRT] INFO: [MemUsageChange] Init cuDNN: CPU +249, GPU +248, now: CPU 876, GPU 6745 (MiB)
+[TensorRT] INFO: [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +0, now: CPU 876, GPU 6745 (MiB)
+[TensorRT] VERBOSE: Deserialization required 1897787 microseconds.
+[TensorRT] INFO: [MemUsageSnapshot] deserializeCudaEngine end: CPU 876 MiB, GPU 6745 MiB
+[TensorRT] INFO: [MemUsageSnapshot] ExecutionContext creation begin: CPU 874 MiB, GPU 6745 MiB
+[TensorRT] VERBOSE: Using cublas a tactic source
+[TensorRT] INFO: [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +1, GPU +0, now: CPU 875, GPU 6745 (MiB)
+[TensorRT] VERBOSE: Using cuDNN as a tactic source
+[TensorRT] INFO: [MemUsageChange] Init cuDNN: CPU +0, GPU +0, now: CPU 875, GPU 6745 (MiB)
+[TensorRT] VERBOSE: Total per-runner device memory is 54272
+[TensorRT] VERBOSE: Total per-runner host memory is 8064
+[TensorRT] VERBOSE: Allocated activation device memory of size 9224704
+[TensorRT] INFO: [MemUsageSnapshot] ExecutionContext creation end: CPU 875 MiB, GPU 6745 MiB
+TensorRT Inference Settings:
+  Batch Size           : 32
+  Explicit Batch       : False
+  Input Layer
+    Name               : input_buffer
+    Shape              : (32, 2, 3000)
+    dtype              : float32
+  Output Layer
+    Name               : output_task1
+    Name               : output_task2
+    Name               : output_task3
+    Name               : output_task4
+    Shape              : (32, 3)
+    Shape              : (32, 3)
+    Shape              : (32, 3)
+    Shape              : (32, 7)
+    dtype              : float32
+    dtype              : float32
+    dtype              : float32
+    dtype              : float32
+  Receiver Output Size : 192,000 samples
+  TensorRT Input Size  : 192,000 samples
+  TensorRT Output Size : 96 samples
+  TensorRT Output Size : 96 samples
+  TensorRT Output Size : 96 samples
+  TensorRT Output Size : 224 samples
+Elapsed time (seconds): 1.3549876213 :
+Runtime one sample per seconds (seconds): 0.0001654038 :
+ 
+[TensorRT] INFO: [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +0, now: CPU 876, GPU 6747 (MiB)
+To end!
+
+-----------------------------------------------------------------
+MTL_Torch_model_VGG10MTL_8-11-2023_FP16_batch64.plan
+-----------------------------------------------------------------
+[TensorRT] INFO: [MemUsageChange] Init CUDA: CPU +234, GPU +0, now: CPU 457, GPU 6328 (MiB)
+[TensorRT] INFO: Loaded engine size: 1 MB
+[TensorRT] INFO: [MemUsageSnapshot] deserializeCudaEngine begin: CPU 459 MiB, GPU 6330 MiB
+[TensorRT] VERBOSE: Using cublas a tactic source
+[TensorRT] INFO: [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +167, GPU +165, now: CPU 627, GPU 6495 (MiB)
+[TensorRT] VERBOSE: Using cuDNN as a tactic source
+[TensorRT] INFO: [MemUsageChange] Init cuDNN: CPU +249, GPU +252, now: CPU 876, GPU 6747 (MiB)
+[TensorRT] INFO: [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +0, now: CPU 876, GPU 6747 (MiB)
+[TensorRT] VERBOSE: Deserialization required 1903164 microseconds.
+[TensorRT] INFO: [MemUsageSnapshot] deserializeCudaEngine end: CPU 876 MiB, GPU 6747 MiB
+[TensorRT] INFO: [MemUsageSnapshot] ExecutionContext creation begin: CPU 874 MiB, GPU 6747 MiB
+[TensorRT] VERBOSE: Using cublas a tactic source
+[TensorRT] INFO: [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +1, GPU +0, now: CPU 875, GPU 6747 (MiB)
+[TensorRT] VERBOSE: Using cuDNN as a tactic source
+[TensorRT] INFO: [MemUsageChange] Init cuDNN: CPU +0, GPU +0, now: CPU 875, GPU 6747 (MiB)
+[TensorRT] VERBOSE: Total per-runner device memory is 54272
+[TensorRT] VERBOSE: Total per-runner host memory is 8576
+[TensorRT] VERBOSE: Allocated activation device memory of size 18449408
+[TensorRT] INFO: [MemUsageSnapshot] ExecutionContext creation end: CPU 875 MiB, GPU 6747 MiB
+TensorRT Inference Settings:
+  Batch Size           : 64
+  Explicit Batch       : False
+  Input Layer
+    Name               : input_buffer
+    Shape              : (64, 2, 3000)
+    dtype              : float32
+  Output Layer
+    Name               : output_task1
+    Name               : output_task2
+    Name               : output_task3
+    Name               : output_task4
+    Shape              : (64, 3)
+    Shape              : (64, 3)
+    Shape              : (64, 3)
+    Shape              : (64, 7)
+    dtype              : float32
+    dtype              : float32
+    dtype              : float32
+    dtype              : float32
+  Receiver Output Size : 384,000 samples
+  TensorRT Input Size  : 384,000 samples
+  TensorRT Output Size : 192 samples
+  TensorRT Output Size : 192 samples
+  TensorRT Output Size : 192 samples
+  TensorRT Output Size : 448 samples
+Elapsed time (seconds): 0.9760515690 :
+Runtime one sample per seconds (seconds): 0.0001191469 :
+ 
+[TensorRT] INFO: [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +0, now: CPU 877, GPU 6750 (MiB)
+To end!
+
+-----------------------------------------------------------------
+MTL_Torch_model_VGG10MTL_8-11-2023_FP16_batch128.plan
+-----------------------------------------------------------------
+[TensorRT] INFO: [MemUsageChange] Init CUDA: CPU +234, GPU +0, now: CPU 457, GPU 6325 (MiB)
+[TensorRT] INFO: Loaded engine size: 1 MB
+[TensorRT] INFO: [MemUsageSnapshot] deserializeCudaEngine begin: CPU 459 MiB, GPU 6329 MiB
+[TensorRT] VERBOSE: Using cublas a tactic source
+[TensorRT] INFO: [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +168, GPU +171, now: CPU 627, GPU 6500 (MiB)
+[TensorRT] VERBOSE: Using cuDNN as a tactic source
+[TensorRT] INFO: [MemUsageChange] Init cuDNN: CPU +249, GPU +249, now: CPU 876, GPU 6749 (MiB)
+[TensorRT] INFO: [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +0, now: CPU 876, GPU 6749 (MiB)
+[TensorRT] VERBOSE: Deserialization required 1903361 microseconds.
+[TensorRT] INFO: [MemUsageSnapshot] deserializeCudaEngine end: CPU 876 MiB, GPU 6749 MiB
+[TensorRT] INFO: [MemUsageSnapshot] ExecutionContext creation begin: CPU 874 MiB, GPU 6749 MiB
+[TensorRT] VERBOSE: Using cublas a tactic source
+[TensorRT] INFO: [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +0, now: CPU 874, GPU 6749 (MiB)
+[TensorRT] VERBOSE: Using cuDNN as a tactic source
+[TensorRT] INFO: [MemUsageChange] Init cuDNN: CPU +1, GPU +0, now: CPU 875, GPU 6749 (MiB)
+[TensorRT] VERBOSE: Total per-runner device memory is 54272
+[TensorRT] VERBOSE: Total per-runner host memory is 8576
+[TensorRT] VERBOSE: Allocated activation device memory of size 36890624
+[TensorRT] INFO: [MemUsageSnapshot] ExecutionContext creation end: CPU 875 MiB, GPU 6749 MiB
+TensorRT Inference Settings:
+  Batch Size           : 128
+  Explicit Batch       : False
+  Input Layer
+    Name               : input_buffer
+    Shape              : (128, 2, 3000)
+    dtype              : float32
+  Output Layer
+    Name               : output_task1
+    Name               : output_task2
+    Name               : output_task3
+    Name               : output_task4
+    Shape              : (128, 3)
+    Shape              : (128, 3)
+    Shape              : (128, 3)
+    Shape              : (128, 7)
+    dtype              : float32
+    dtype              : float32
+    dtype              : float32
+    dtype              : float32
+  Receiver Output Size : 768,000 samples
+  TensorRT Input Size  : 768,000 samples
+  TensorRT Output Size : 384 samples
+  TensorRT Output Size : 384 samples
+  TensorRT Output Size : 384 samples
+  TensorRT Output Size : 896 samples
+Elapsed time (seconds): 0.8812818527 :
+Runtime one sample per seconds (seconds): 0.0001075784 :
+ 
+[TensorRT] INFO: [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +0, now: CPU 878, GPU 6756 (MiB)
+To end!
+ 
+
